@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(228, 228, 201);
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    border: 1px outset;
+    border-radius: 35px;
+    border-color: hsla(51, 81%, 47%, 0.839);
+    border-width: 5px;
+    background-color: darkred;
+    color: hsla(51, 81%, 47%, 0.839);
+    font-size: 1.5cm;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    margin: 160px;
+    padding: 0px;
+    display: flex;
+    border:  1px ;
+    box-sizing: border-box;
+    text-align: center;
+}
