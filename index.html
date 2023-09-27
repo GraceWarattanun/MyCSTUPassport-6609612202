@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>My CSTU Passport</title>
         <style>
-            body{background-image: linear-gradient(rgb(228, 228, 201),rgba(255, 202, 239, 0.838),rgb(228, 228, 201));}
+            body{background-color: rgb(255, 250, 240);}
             h1{text-align: center;
                 border:outset;
                 border-radius: 35px;
@@ -11,29 +10,32 @@
                 background-color:darkred;
                 color:hsla(51, 81%, 47%, 0.839);
                 font-size: 1.5cm;}
-            #para1{text-align: start;
-                   font-size:0.6cm;}
+            .main{text-align: start;
+                   font-size:0.6cm;
+                  position: absolute;
+                  top: 0%; left: 0%;
+                  transform: translate(20%,30%);}
+            .topic{text-decoration: underline;
+                   font-weight: bold;}
         </style>
     </head>
     <body>
         <h1>My CSTU Passport &#9992;  </h1> 
-        <div style="position: absolute;
-                    top: 0%; left: 0%;
-                    transform: translate(20%,30%); "> 
-            <p id="para1"><strong style="text-decoration: underline;">ชื่อ</strong> นางสาววรัตถนันต์ สืบกระแสร์<br>
-                <strong style="text-decoration: underline;">ชื่อเล่น</strong> เกรซ<br>
-                <b style="text-decoration: underline;">เลขนักศึกษา</b> 6609612202<br>
-                <b style="text-decoration: underline;">มหาวิทยาลัย</b> ธรรมศาสตร์ศูนย์รังสิต<br>
-                <b style="text-decoration: underline;">คณะ</b> วิทยาศาสตร์และเทคโนโลยี<br>
-                <b style="text-decoration: underline;">สาขา</b> วิทยาการคอมพิวเตอร์
+        <div class="main"> 
+            <p><span class="topic">ชื่อ</span> นางสาววรัตถนันต์ สืบกระแสร์<br>
+                <span class="topic">ชื่อเล่น</span> เกรซ<br>
+                <span class="topic">เลขนักศึกษา</span> 6609612202<br>
+                <span class="topic">มหาวิทยาลัย</span> ธรรมศาสตร์ศูนย์รังสิต<br>
+                <span class="topic">คณะ</span> วิทยาศาสตร์และเทคโนโลยี<br>
+                <span class="topic">สาขา</span> วิทยาการคอมพิวเตอร์
             </p>  
-            <p style="font-size: 0.6cm; text-decoration: underline;"><b>งานอดิเรก</b></p>
-            <ol style="font-size: 0.6cm;">
+            <p class="topic">งานอดิเรก</p>
+            <ol>
                 <li>ฟังเพลง<a href="https://www.youtube.com/watch?v=huWJMEkznbU"><cite>(My fav song)</cite></a></li>
                 <li>เล่นเกม</li>
             </ol>
-            <p style="font-size: 0.6cm; text-decoration: underline;"><b><mark>ช่องทางการติดต่อ</mark></b></p>
-            <ul style="font-size: 0.6cm;">
+            <p class="topic"><mark>ช่องทางการติดต่อ</mark></p>
+            <ul>
                 <li><b>Email</b> Warattanun.seu@dome.tu.ac.th</li>
                 <li><b>Phone Number</b> 0815336008</li>
                 <li><b>Line</b> grace310148</li>
