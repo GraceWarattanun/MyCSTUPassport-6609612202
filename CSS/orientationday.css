@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(228, 228, 201);
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    border: 1px outset;
+    border-radius: 35px;
+    border-color: hsla(51, 81%, 47%, 0.839);
+    border-width: 5px;
+    background-color: darkred;
+    color: hsla(51, 81%, 47%, 0.839);
+    font-size: 1.5cm;
+    padding: 10px;
+    font-style: oblique;
+    font-weight: bolder;
+}
+
+.text2{
+    text-align: center;
+    padding: 30px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    width: 70%;
+    flex-direction: column;
+    margin-left: 15%;
+}
