@@ -1,8 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
-            body{background-image: url("Images/bg1.jpg");}
+            * {
+            box-sizing: border-box;
+            }
+
+            .row::after {
+            content: "";
+            clear: both;
+            display: table;
+            }
+
+            [class*="col-"] {
+            float: left;
+            padding: 15px;
+            }
+            [class*="col-"] {
+            width: 100%;
+            }
+
+            @media only screen and (min-width: 600px) {
+            /* For tablets: */
+            .col-s-1 {width: 8.33%;}
+            .col-s-2 {width: 16.66%;}
+            .col-s-3 {width: 25%;}
+            .col-s-4 {width: 33.33%;}
+            .col-s-5 {width: 41.66%;}
+            .col-s-6 {width: 50%;}
+            .col-s-7 {width: 58.33%;}
+            .col-s-8 {width: 66.66%;}
+            .col-s-9 {width: 75%;}
+            .col-s-10 {width: 83.33%;}
+            .col-s-11 {width: 91.66%;}
+            .col-s-12 {width: 100%;}
+            }
+            @media only screen and (min-width: 768px) {
+            /* For desktop: */
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+            }
+            body{background-color:  rgb(228, 228, 201);
+                /*background-image: url("Images/bg1.jpg");*/
+            }
             h1{text-align: center;
                 margin: 0%;
                 border:outset;
@@ -22,15 +73,25 @@
                   /*transform: translate(20%,30%);*/}
             .topic{text-decoration: underline;
                    font-weight: bold;}
-            .icon1{margin-right: 0;
-                   color: rgb(147, 36, 36);
+            .icon1{color:hsla(51, 81%, 47%, 0.839);
+                   border: outset;
                    font-weight: bold;
-                   font-style: oblique;}
+                   padding: 8px;
+                   margin-bottom: 7px;
+                   border-radius: 15px;
+                   padding: 20px;
+                   padding-left: 30px;
+                   padding-right: 30px;
+                   background-color: darkred;
+                   border-color:hsla(51, 81%, 47%, 0.839) ;
+                   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);}
         </style>
     </head>
     <body>     
         <h1>My CSTU Passport &#9992;</h1>
-        <div class="main"> 
+        <div class="row">
+        <div class="col-3 col-s-3">  
+            <div class="main">          
             <p><span class="topic">ชื่อ</span> นางสาววรัตถนันต์ สืบกระแสร์<br>
                 <span class="topic">ชื่อเล่น</span> เกรซ<br>
                 <span class="topic">เลขนักศึกษา</span> 6609612202<br>
@@ -48,19 +109,23 @@
                 <li><b>Email</b> Warattanun.seu@dome.tu.ac.th</li>
                 <li><b>Phone Number</b> 0815336008</li>
                 <li><b>Line</b> grace310148</li>
-                <li><b>Instagram</b> gxwarat</li>
+                <li><b>Instagram</b> gxwarat</li><br>
             </ul>
-            <a class="icon1" href="HTML/myAdvisor.html">My Advisor /</a>
-            <a class="icon1" href="HTML/myActivities.html">My Activities</a>                
-        </div>
+            <a class="icon1" href="HTML/myAdvisor.html"> Advisor </a>&emsp;
+            <a class="icon1" href="HTML/myActivities.html"> Activities </a>
+            </div>
+            </div> 
+            <div class="col-12 col-s-12">                    
         <img src="Images/01.jpg" alt="This is my image" 
                 style="width:390px; height:488px; transform: translate(600px,20px); 
                      border-radius: 25px;
                      box-shadow: 10px 10px 5px rgb(59, 56, 56);">
-            <video controls muted src="Video/03.mp4" 
+        <video controls muted src="Video/03.mp4" 
                 style="width:400px; height: 500px; transform: translate(650px,25px);
                       border-radius: 25px;">
                 Video not supported
-            </video> 
+            </video>
+        </div>
+        </div>
     </body>
 </html>  
