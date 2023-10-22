@@ -1,131 +1,145 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
-            * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+body{background-color:  rgb(228, 228, 201);
             }
 
-            .row::after {
-            content: "";
-            clear: both;
-            display: table;
-            }
+.header {
+    text-align: center;
+    border:outset;
+    border-color:hsla(51, 81%, 47%, 0.839) ;
+    border-width: 5px;
+    border-radius: 35px;
+    text-transform: uppercase;
+    background-color:darkred;
+    color:hsla(51, 81%, 47%, 0.839);
+    font-size: 0.6cm;
+}
 
-            [class*="col-"] {
-            float: left;
-            padding: 15px;
-            }
-            [class*="col-"] {
-            width: 100%;
-            }
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 
-            @media only screen and (min-width: 600px) {
-            /* For tablets: */
-            .col-s-1 {width: 8.33%;}
-            .col-s-2 {width: 16.66%;}
-            .col-s-3 {width: 25%;}
-            .col-s-4 {width: 33.33%;}
-            .col-s-5 {width: 41.66%;}
-            .col-s-6 {width: 50%;}
-            .col-s-7 {width: 58.33%;}
-            .col-s-8 {width: 66.66%;}
-            .col-s-9 {width: 75%;}
-            .col-s-10 {width: 83.33%;}
-            .col-s-11 {width: 91.66%;}
-            .col-s-12 {width: 100%;}
-            }
-            @media only screen and (min-width: 768px) {
-            /* For desktop: */
-            .col-1 {width: 8.33%;}
-            .col-2 {width: 16.66%;}
-            .col-3 {width: 25%;}
-            .col-4 {width: 33.33%;}
-            .col-5 {width: 41.66%;}
-            .col-6 {width: 50%;}
-            .col-7 {width: 58.33%;}
-            .col-8 {width: 66.66%;}
-            .col-9 {width: 75%;}
-            .col-10 {width: 83.33%;}
-            .col-11 {width: 91.66%;}
-            .col-12 {width: 100%;}
-            }
-            body{background-color:  rgb(228, 228, 201);
-                /*background-image: url("Images/bg1.jpg");*/
-            }
-            h1{text-align: center;
-                margin: 0%;
-                border:outset;
-                border-color:hsla(51, 81%, 47%, 0.839) ;
-                border-width: 5px;
-                border-radius: 35px;
-                text-transform: uppercase;
-                background-color:darkred;
-                color:hsla(51, 81%, 47%, 0.839);
-                font-size: 1.5cm;}
-            .main{text-align: start;
-                   font-size:0.6cm;
-                  position: absolute;
-                  top: -1%; left: 2%;
-                  margin-top: 140px;
-                  margin-left: 50px;
-                  /*transform: translate(20%,30%);*/}
-            .topic{text-decoration: underline;
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: darkred;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  color:white;
+  border: outset;
+    font-weight: bold;
+    border-radius: 15px;
+    border-color:hsla(51, 81%, 47%, 0.839) ;
+    padding: 20px;
+    text-align: center;
+}
+
+.menu li:hover {
+  background-color: darkred;
+}
+
+.icon{color: hsla(51, 81%, 47%, 0.839);}
+
+.main {
+  background-color:darkred;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.topic{text-decoration: underline;
                    font-weight: bold;}
-            .icon1{color:hsla(51, 81%, 47%, 0.839);
-                   border: outset;
-                   font-weight: bold;
-                   border-radius: 15px;
-                   padding: 20px;
-                   padding-left: 30px;
-                   padding-right: 30px;
-                   background-color: darkred;
-                   border-color:hsla(51, 81%, 47%, 0.839) ;
-                   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);}
-        </style>
-    </head>
-    <body>     
-        <h1>My CSTU Passport &#9992;</h1>
-        <div class="row">
-        <div class="col-3 col-s-3">  
-            <div class="main">          
-            <p><span class="topic">ชื่อ</span> นางสาววรัตถนันต์ สืบกระแสร์<br>
-                <span class="topic">ชื่อเล่น</span> เกรซ<br>
-                <span class="topic">เลขนักศึกษา</span> 6609612202<br>
-                <span class="topic">มหาวิทยาลัย</span> ธรรมศาสตร์ศูนย์รังสิต<br>
-                <span class="topic">คณะ</span> วิทยาศาสตร์และเทคโนโลยี<br>
-                <span class="topic">สาขา</span> วิทยาการคอมพิวเตอร์
-            </p>  
-            <p class="topic"><br>งานอดิเรก</p>
+
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>My CSTU Passport &#9992;</h1>
+</div>
+
+  <div class="row">
+  <div class="col-3 right">
+    <div class="main">
+        <span class="topic">ชื่อ</span> นางสาววรัตถนันต์ สืบกระแสร์<br>
+        <span class="topic">ชื่อเล่น</span> เกรซ<br>
+        <span class="topic">เลขนักศึกษา</span> 6609612202<br>
+        <span class="topic">มหาวิทยาลัย</span> ธรรมศาสตร์ศูนย์รังสิต<br>
+        <span class="topic">คณะ</span> วิทยาศาสตร์และเทคโนโลยี<br>
+        <span class="topic">สาขา</span> วิทยาการคอมพิวเตอร์
+        <p class="topic"><br>งานอดิเรก</p>
             <ol>
-                &emsp;<li>ฟังเพลง<a href="https://www.youtube.com/watch?v=huWJMEkznbU"><cite>(My fav song)</cite></a></li>
+                <li>ฟังเพลง<a href="https://www.youtube.com/watch?v=huWJMEkznbU"><cite>(My fav song)</cite></a></li>
                 <li>เล่นเกม</li><br>
-            </ol>
-            <p class="topic"><mark>ช่องทางการติดต่อ</mark></p>
+            </ol><mark>ช่องทางการติดต่อ</mark></p>
             <ul>
-                &emsp;<li><b>Email</b> Warattanun.seu@dome.tu.ac.th</li>
+                <li><b>Email</b> Warattanun.seu@dome.tu.ac.th</li>
                 <li><b>Phone Number</b> 0815336008</li>
                 <li><b>Line</b> grace310148</li>
                 <li><b>Instagram</b> gxwarat</li><br><br>
             </ul>
-            <a class="icon1" href="HTML/myAdvisor.html"> Advisor </a>&emsp;
-            <a class="icon1" href="HTML/myActivities.html"> Activities </a>
-            </div>
-            </div>
-        </div> 
-            <div class="col-6 col-s-6">                    
-        <img src="Images/01.jpg" alt="This is my image" 
-                style="width:390px; height:488px; display: flex;
-                     border-radius: 25px;
-                     box-shadow: 10px 10px 5px rgb(59, 56, 56);"></div>
-        <video controls muted src="Video/03.mp4" 
-                style="width:400px; height: 500px; margin-left: 70%;
-                      border-radius: 25px;">
-                Video not supported
-            </video>
-        </div>
-    </body>
-</html>  
+    </div>
+  </div>
+
+  <div class="col-6" >
+    <img src="Images/01.jpg" alt="This is my image" 
+            style="max-width:390px; max-height:488px;
+                border-radius: 25px; 
+                box-shadow: 10px 10px 5px rgb(59, 56, 56); ">
+
+    <video controls muted src="Video/03.mp4" 0
+            style="max-width:400px; max-height: 500px; 
+                border-radius: 25px; "  >
+    </video>
+  </div>
+
+    <div class="col-3 menu">
+      <ul>
+      <li><a class="icon" href="HTML/myAdvisor.html"> Advisor </a></li>
+      <li><a class="icon" href="HTML/myActivities.html"> Activities </a></li>
+      </ul>
+    </div>
+</div>
+</body>
+</html>
